@@ -10,9 +10,9 @@ http://prdownloads.sourceforge.net/wxwindows/wxMSW-2.8.12.zip
 https://msysgit.googlecode.com/files/PortableGit-1.7.10-preview20120409.7z
 ################################################################################
 ### stuff you might find useful
-#bitvise_sshd_bits		WinSSHD5-Inst.exe	http://dl.bitvise.com/WinSSHD5-Inst.exe
-#ramdisk	imdiskinst.exe	http://www.ltr-data.se/files/imdiskinst.exe
-#notepadplus	npp.5.8.7.bin.minimalist.7z http://downloads.sourceforge.net/project/notepad-plus/notepad%2B%2B%20releases%20binary/npp%205.8.7%20bin/npp.5.8.7.bin.minimalist.7z
+#bitvise_sshd_bits      WinSSHD5-Inst.exe   http://dl.bitvise.com/WinSSHD5-Inst.exe
+#ramdisk    imdiskinst.exe  http://www.ltr-data.se/files/imdiskinst.exe
+#notepadplus    npp.5.8.7.bin.minimalist.7z http://downloads.sourceforge.net/project/notepad-plus/notepad%2B%2B%20releases%20binary/npp%205.8.7%20bin/npp.5.8.7.bin.minimalist.7z
 #sublime2       http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202%20Build%202139%20x64%20Setup.exe
 ################################################################################
 ### compilers and SDKs
@@ -32,27 +32,30 @@ http://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFF
 ### OpenSSL and libcURL
 http://www.openssl.org/source/openssl-0.9.8r.tar.gz
 http://curl.haxx.se/download/curl-7.23.1.zip
-http://zlib.net/zlib127.zip
+http://downloads.sourceforge.net/project/libpng/zlib/1.2.5/zlib125.zip
+
 ################################################################################
 ### bits required to build erlang
 http://www.erlang.org/download/otp_src_R15B01.tar.gz
 http://www.erlang.org/download/otp_src_R14B04.tar.gz
-### nsis	nsis-2.46-setup.exe
+http://www.erlang.org/download/otp_src_R14B03.tar.gz
+### nsis    nsis-2.46-setup.exe
 http://download.sourceforge.net/project/nsis/NSIS%202/2.46/nsis-2.46-setup.exe
 http://www.erlang.org/download/tcltk85_win32_bin.tar.gz
 
 ################################################################################
 # bits required to build couch
-### libicu	icu4c-4_6_1-src.zip for MSVC10
+### libicu  icu4c-4_6_1-src.zip for MSVC10
 http://download.icu-project.org/files/icu4c/4.6.1/icu4c-4_6_1-src.zip
-### libicu	icu4c-4_6_1-src.tgz for MSVC9 with cygwin Makefile
+### libicu  icu4c-4_6_1-src.tgz for MSVC9 with cygwin Makefile
 http://download.icu-project.org/files/icu4c/4.6.1/icu4c-4_6_1-src.tgz
-### inno5_setup	isetup-5.4.3-unicode.exe
-http://www.jrsoftware.org/download.php/is-unicode.exe
+### inno5_setup isetup-5.4.3-unicode.exe
+http://files.jrsoftware.org/is/5/isetup-5.4.3-unicode.exe
 ### spidermonkey    js185-1.0.0.tar.gz
 http://ftp.mozilla.org/pub/mozilla.org/js/js185-1.0.0.tar.gz
 
 ################################################################################
 ## CouchDB source not reqd checkout from git instead
 ## not auto redirect but original link is from http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.x.y/apache-couchdb-1.x.y.tar.gz
-
+#http://ftp.wayne.edu/apache/couchdb/1.1.1/apache-couchdb-1.1.1.tar.gz
+#http://ftp-stud.hs-esslingen.de/pub/Mirrors/ftp.apache.org/dist/couchdb/releases/1.2.0/apache-couchdb-1.2.0.tar.gz
