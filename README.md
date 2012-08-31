@@ -38,6 +38,10 @@ mozilla & cygwin setup.
 as appropriate for your platform using:
     * SDK 7.0 [win70sdk_websetup] or a downloaded [win70sdk_iso]
     * SDK 7.1 [win71sdk_websetup] or a downloaded [win71sdk_iso]
+
+* If you get a warning during the installation of the SDK about a
+  missing .NET Framework, then you need to install
+  [Microsoft .NET Framework 4] before.
 * Run Windows Update for latest patches
 * Reboot
 * Download Mozilla toolkit from [mozbuild] and install per defaults
@@ -52,6 +56,7 @@ as appropriate for your platform using:
 [win70sdk_websetup]: http://www.microsoft.com/download/en/details.aspx?id=3138
 [win70sdk_iso]:	http://go.microsoft.com/fwlink/?LinkID=150216
 [mozbuild]: http://ftp.mozilla.org/pub/mozilla.org/mozilla/libraries/win32/MozillaBuildSetup-1.6.exe
+[Microsoft .Net Framework 4]: http://www.microsoft.com/en-us/download/details.aspx?id=17851
 
 ## Initial Setup of Environment
 
