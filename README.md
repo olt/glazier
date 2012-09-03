@@ -44,8 +44,8 @@ as appropriate for your platform using:
   [Microsoft .NET Framework 4] before.
 * Run Windows Update for latest patches
 * Reboot
-* Download Mozilla toolkit from [mozbuild] and install per defaults
-* Install [cygwin] components, at least:
+* Install [mozbuild] from `%relax%/bits/MozillaBuildSetup-*.exe` and install per defaults
+* Install [cygwin] from `%relax%/bits/setup.exe`, with at least the following components:
     * devel: ALL (or just the GCC and GCC C++ compilers and GNU auto)
     * editors: vim or emacs
     * utils: file
@@ -62,8 +62,14 @@ as appropriate for your platform using:
 
 Now that the compilers are installed, we need to set a few things up first:
 
-* start an SDK shell via `setenv.cmd /Release /x86`
+* start an SDK shell (e.g. Windows SDK 7.1 Command Prompt) and call `setenv.cmd /Release /x86`
+* set RELAX=c:\relax
+* set OPT=c:\opt
+* run `cd c:\relax`
 * run `c:\relax\bin\setup.cmd` once to set up links and environment variables
+
+You might need to start the shell as administrator: right-click on the
+command prompt icon in the Windows menu.
 
 You should end up with something resembling this structure:
 
@@ -87,15 +93,18 @@ and CouchDB by default.
 * for Windows SDK 7.0, copy [vcredist_sdk70] to `%relax%/`
 
 The express solution is just to use 7zip to unpack [glazier tools](https://github.com/downloads/dch/glazier/toolbox.7z)
- inside `%relax%`. Or do it manually for the same result:
+ inside `%opt%`. Or do it manually for the same result:
 
 * Add 7zip from `c:\mozilla-build\7zip` to your path
 * Innosoft's [isetup] to `c:\opt\inno5`
 * Nullsoft [NSIS] Installer to `c:\opt\nsis`
-* Add 7zip, Inno5, and nsis to the user environment PATH
 * using 7zip, extract and rename [nasm] to `c:\opt\nasm`
 * using 7zip, extract and rename [cmake] to `c:\opt\cmake`
 * `mkdir c:\opt\strawberry && cd c:\opt\strawberry` then using 7zip, extract Strawberry [Perl]
+
+
+* After that, add all packages to the user environment PATH, e.g.:
+ `C:\relax>set PATH=%PATH%;c:\opt\strawberry\bin;c:\opt\cmake\bin;c:\opt\nasm\;c:\opt\nsis\Bin;c:\opt\inno5\`
 
 [perl]: http://strawberryperl.com/download/5.12.2.0/strawberry-perl-5.12.2.0-portable.zip
 [nasm]: http://www.nasm.us/pub/nasm/releasebuilds/2.09.07/win32/nasm-2.09.07-win32.zip
@@ -175,7 +184,7 @@ More details are at [erlang INSTALL-Win32.md on github](http://github.com/erlang
 * start an SDK shell via `setenv.cmd /Release /x86`
 * launch a cygwin erl-ified shell via `c:\relax\bin\shell.cmd`
 * choose your erlang version - R14B04 is strongly advised
-* unpack erlang source by `cd $RELAX && tar xzf bits/otp_src_R14B04.tar.gz`
+* unpack erlang source by `cd $WELDIR && tar xzf $RELAX/bits/otp_src_R14B04.tar.gz`
 * customise Erlang by excluding unneeded Java interface and old GS GUI:
 
         cd $ERL_TOP
